@@ -1,0 +1,182 @@
+body{ height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+}
+
+.button{
+  background: none;
+  border-radius: 10px;
+  top: 450px;
+  position: absolute;
+}
+
+.button:hover{
+  box-shadow: 1px 1px .5px .5px grey;
+}
+
+#saa{
+  opacity: 1;
+  color: black;
+  font-family: 'Akaya Telivigala';
+}
+
+.main{ background-image: url("sher.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       padding: 0px;
+       height: 754px;
+       width: 100%;
+       color: black;
+       animation-name: baddy;
+       animation-duration: 50s;
+       animation-iteration-count: infinite;
+       display: block;
+       justify-content: center;
+}
+
+@keyframes baddy {
+  10%{background-image: url("sher.jpg");}
+  50%{background-image: url("shers.jpg");}
+  100%{background-image: url("sherss.jpg");}
+
+}
+
+.intro{ position: absolute;
+        z-index: 3;
+        font-family: cursive;
+        top: 400px;
+        animation: position 5s;
+        text-shadow: 1px 1px 2px white;
+}
+
+@keyframes position {  0%{ opacity: 0;}
+                       25%{ opacity: 0.3;}
+                       50%{ opacity: 0.5;}
+                       75%{ opacity: 0.75;}
+                       100%{ opacity: 1;}
+}
+
+.drop{
+       height: auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.lc{ width: 100px;
+     height: 100px;
+     border-radius: 50px;
+     position: absolute;
+     box-shadow: 0px 0.5px 5px 0.1px black;
+     top: 300px;
+     animation-name: drop;
+     animation-duration: 3s;
+     animation-iteration-count: 1;
+}
+
+@keyframes drop { 0% {top: 0px; width: 10px; height: 10px; border-radius: 5px;}
+                  100%{top: 300px; width: 100px; height: 100px; border-radius: 50px; background: radial-gradient(circle, black, white); transform: rotate(360deg);}
+}
+
+a{ color: white;
+   text-decoration: none;
+}
+
+.head{
+  display: flex;
+  position: absolute;
+  top: 22px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.header{
+  display: inline-block;
+  padding: 10px;
+  font-size: 10px;
+  color: black;
+  animation-name: kin;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  color: white;
+}
+
+@keyframes kink {
+  10%{color: black;}
+  50%{color: white;}
+  100%{color: white;}
+}
+
+.headers{
+  animation-name: kink;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+
+.me{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 550px;
+  border: 2px soli black;
+  border-radius: 10%;
+  box-shadow: 5px solid grey
+}
+
+.mes{
+  background-image: linear-gradient(to left, #353839 40%, #2f4f4f 60%);
+  opacity: .7;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+#div{
+  height: 100px;
+}
+
+.onyi{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%) scale(0.6, 0.6);
+  border-radius: 75px;
+}
+
+.hello{
+  position: relative;
+  float: left;
+  color: black;
+  font-size: 20px;
+  font-family: Apple Chancery, cursive;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: 0;
+  bottom: 50;
+}
+
+.home{
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  top: 32px;
+  left: 30px;
+}
+
+foot{background-color: black;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+}
