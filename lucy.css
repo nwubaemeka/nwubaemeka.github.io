@@ -7,7 +7,8 @@ body{ height: 100%;
 }
 
 .button{
-  background: none;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10%) saturate (100%) contrast(45%) brightness(130%);
   border-radius: 10px;
   top: 450px;
   position: absolute;
@@ -21,6 +22,7 @@ body{ height: 100%;
   opacity: 1;
   color: black;
   font-family: 'Akaya Telivigala';
+  animation: none;
 }
 
 .main{ background-image: url("sher.jpg");
@@ -41,7 +43,6 @@ body{ height: 100%;
   10%{background-image: url("sher.jpg");}
   50%{background-image: url("shers.jpg");}
   100%{background-image: url("sherss.jpg");}
-
 }
 
 .intro{ position: absolute;
