@@ -219,7 +219,7 @@ ul:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: 0px;
+  bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(70%) saturate (100%) contrast(45%) brightness(130%);
