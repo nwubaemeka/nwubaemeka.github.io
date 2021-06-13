@@ -1,6 +1,7 @@
 body{ height: 100%;
       width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0px;
@@ -180,4 +181,76 @@ foot{background-color: black;
   width: 50%;
   position: absolute;
   bottom: 0;
+}
+
+.aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(70%) saturate (100%) contrast(45%) brightness(130%);
+  border-radius: 0.625rem;
+  font-family: cursive;
+  color: white;
+  width: 20px;
+  overflow-x: hidden;
+}
+
+.aside:hover{
+  width: auto;
+}
+
+.aside ul{
+  margin: 0.3125rem;
+  padding: 0.3125rem;
+  opacity: 0;
+}
+
+ul:hover{
+  opacity: 1;
+}
+
+#icons{
+  height: 30px;
+  width: 200px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 10px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(70%) saturate (100%) contrast(45%) brightness(130%);
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px black);
+}
+
+@media screen and () {
+
+}
+
+#icons a{
+  background: rgba(52, 73, 94, 0.5);
+  width: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#mail{
+  width: 20px;
+  height: 20px;
+}
+
+#ig{
+  width: 20px;
+  height: 20px;
+}
+
+#whatsapp{
+  width: 20px;
+  height: 20px;
 }
