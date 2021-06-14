@@ -226,10 +226,6 @@ ul:hover{
   filter: drop-shadow(1px 1px 5px black);
 }
 
-@media screen and () {
-
-}
-
 #icons a{
   background: rgba(52, 73, 94, 0.5);
   width: 25px;
