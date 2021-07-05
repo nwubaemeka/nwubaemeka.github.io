@@ -1,0 +1,23 @@
+body{
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel{
+   display: flex;
+   width: 50%;
+   overflow-x: hidden;
+}
+
+figure{
+  display: flex;
+  align-items: center;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}

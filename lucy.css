@@ -8,15 +8,17 @@ body{ height: 100%;
 }
 
 .button{
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10%) saturate (100%) contrast(45%) brightness(130%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(70%) saturate (100%) contrast(45%) brightness(130%);
+  border: 0.3px inset white;
   border-radius: 10px;
   top: 450px;
   position: absolute;
 }
 
 .button:hover{
-  box-shadow: 1px 1px .5px .5px grey;
+  transform: translateY(2%);
+  box-shadow: 1px 1px .5px 1px grey;
 }
 
 #saa{
@@ -95,6 +97,11 @@ a{ color: white;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(70%) saturate (100%) contrast(45%) brightness(130%);
+  border: 0.1px inset white;
+  border-radius: 10px;
+  border-top: 0;
 }
 
 .header{
@@ -108,11 +115,54 @@ a{ color: white;
   color: white;
 }
 
-@keyframes kink {
+.header:hover{
+  border-top: 1px solid white;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  transition: all 0.5s ease-out;
+}
+
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: .7rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  width: 90%;
+  height: 2px;
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  .toggle-button{
+    display: flex;
+  }
+  .head{
+    display: none;
+  }
+  .head{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 35px;
+   }
+   .head.active{
+     display: flex;
+   }
+}
+
+/*keyframes kink {
   10%{color: black;}
   50%{color: white;}
   100%{color: white;}
-}
+}*/
 
 .headers{
   animation-name: kink;
@@ -177,41 +227,6 @@ a{ color: white;
   left: 30px;
 }
 
-foot{background-color: black;
-  width: 50%;
-  position: absolute;
-  bottom: 0;
-}
-
-.aside{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(70%) saturate (100%) contrast(45%) brightness(130%);
-  border-radius: 0.625rem;
-  font-family: cursive;
-  color: white;
-  width: 20px;
-  overflow-x: hidden;
-}
-
-.aside:hover{
-  width: auto;
-}
-
-.aside ul{
-  margin: 0.3125rem;
-  padding: 0.3125rem;
-  opacity: 0;
-}
-
-ul:hover{
-  opacity: 1;
-}
-
 #icons{
   height: 30px;
   width: 200px;
@@ -220,19 +235,23 @@ ul:hover{
   justify-content: space-between;
   align-items: center;
   bottom: 10px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(70%) saturate (100%) contrast(45%) brightness(130%);
+  border: 0.1px inset white;
   border-radius: 10px;
   filter: drop-shadow(1px 1px 5px black);
 }
 
 #icons a{
-  background: rgba(52, 73, 94, 0.5);
   width: 25px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
+}
 
+#icons a:hover{
+  filter: drop-shadow(1px 1px 2px lightblue);
+  transform: scale(1.2);
 }
 
 #mail{

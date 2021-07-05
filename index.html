@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="lucy.css" type="text/css">
@@ -21,26 +19,33 @@
      </div>-->
    </div>
   </div>
-  <div class="home">
-    <a href="lucy.html">HOME</a>
+  <a href="#" class="toggle-button" onclick="meh()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <nav class="head">
+      <a href="index.html" class="header">HOME</a>
+      <a href="#" class="header">GALLERY</a>
+      <a href="#" class="header">STORY</a>
+      <a href="#" class="header">CONTACT</a>
   </div>
-
-  <div class="head">
-     <a href="#" class="header">GALLERY</a>
-     <a href="#" class="header">STORY</a>
-     <a href="#" class="header">CONTACT</a>
-  </div>
-  <div class="aside">
-    <ul>
-      <li><em>I tell stories</em></li>
-    </ul>
-  </div>
+  </nav>
   <div id="icons">
     <a href="mailto:strindlei@gmail.com"><img id="mail" src="mailto.png" alt="email logo"></a>
     <a href="https://www.instagram.com/lucystevensphotography"> <img id="ig" src="instagram.png" alt="ig logo"> </a>
-    <a href="https://www.wa.me/+2348100102005"> <img id="whatsapp" src="whatsapp.png" alt=""> </a>
+    <a href="https://wa.me/+2348100102005"> <img id="whatsapp" src="whatsapp.png" alt=""> </a>
   </div>
   <script type="text/javascript">
+  function meh() {
+    document.getElementsByClassName('toggle-button').style.display = 'none';
+  }
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const head = document.getElementsByClassName('head')[0]
+
+  toggleButton.addEventListener('click', () => {
+    head.classList.toggle('active')
+  })
   </script>
  </body>
 </html>
